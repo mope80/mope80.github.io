@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>真理之书——分别</title>
+      <link rel="stylesheet" href="startbad.css">
+  </head>
+  <body style='background:#010001';>
+  <div class="box">
+
+<h3>……突然间,你看到她身后那个巨大的红色袭来，你已经无力再喊出声</h3>
+<br>
+<a id="dice"><h4>-大声地喊出来（敏捷检定 中等10 平均 50%</h4></a>
+<script>
+
+    const h4Element = document.getElementById('dice');
+    h4Element.addEventListener('click', function() {
+
+      const dice = Math.floor(Math.random() * 20) + 1;
+        if (dice > 9) {
+            window.location.href = `dyellsuccess.html?number=${dice}`;
+        } else {
+            window.location.href = `dyellfail.html?number=${dice}`;
+        }
+    });
+    </script>
+    </div>
+      </body>
+    </html>

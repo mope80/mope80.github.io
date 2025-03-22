@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>真理之书——拔剑</title>
+      <link rel="stylesheet" href="swordMeet.css">
+  </head>
+  <body style='background:#010001';>
+  <div class="box">
+      <p><span id="dice"></span></p>
+      <script >
+          const urlParams = new URLSearchParams(window.location.search);
+          const dice = urlParams.get('number');
+
+          document.getElementById('dice').textContent = dice;
+      </script>
+      <h3>成功</h3>
+      <h3>你使尽全身的力气，剑从巨石中抽出，巨大的惯性让你后退了几步，尽力站稳才没有从巨石上跌落。你把它擦拭干净，拿在手里查看，剑身上镶嵌着晶石，雕刻着古老的文字和花纹，你能从其中感受到一种力量。</h3>
+
+      <br>
+      <a href="swordToCave.html"><h4>-带着剑前往洞穴方向</h4></a>
+</div>
+  </body>
+</html>

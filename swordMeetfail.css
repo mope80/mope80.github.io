@@ -1,0 +1,38 @@
+.box {
+    width: 360px;
+    border: 11px solid #605f60;
+    padding: 30px;
+    background-color: #242526;
+    margin: 50px auto;
+    text-align: center;
+}
+ h3{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:white;
+  margin: 50px auto;
+  text-align: left;
+  text-indent: 2em;
+  font-family: "SinaNova",Georgia,Times, serif;
+  font-weight: lighter;
+}
+h4{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:white;
+  font-family: Helvetica, Geneva, Arial,SunSans-Regular, sans-serif;
+  background-color: #8b361c
+
+}
+a{
+  text-decoration:none;
+}
+h4:hover{color:green;front-size:20px;background-color: white}
+#dice{
+  color:white;
+}
+h4#dice{
+  color:green;
+}

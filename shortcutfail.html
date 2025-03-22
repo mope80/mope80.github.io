@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>真理之书——捷径</title>
+      <link rel="stylesheet" href="swordMeetfail.css">
+  </head>
+  <body style='background:#010001';>
+  <div class="box">
+      <p><span id="dice"></span></p>
+      <script >
+          const urlParams = new URLSearchParams(window.location.search);
+          const dice = urlParams.get('number');
+
+          document.getElementById('dice').textContent = dice;
+      </script>
+      <h3>失败</h3>
+      <h3>你什么也没发现</h3>
+
+      <br>
+      <a href="aloneToCave.html"><h4>-转身离开向洞穴方向前进</h4></a>
+      <a href='swordMeet.html'><h4>-向右边前进</h4>
+</div>
+  </body>
+</html>

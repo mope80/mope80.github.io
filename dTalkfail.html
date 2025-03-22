@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>真理之书——分别</title>
+      <link rel="stylesheet" href="swordMeetfail.css">
+  </head>
+  <body style='background:#010001';>
+  <div class="box">
+      <p><span id="dice"></span></p>
+      <script >
+          const urlParams = new URLSearchParams(window.location.search);
+          const dice = urlParams.get('number');
+
+          document.getElementById('dice').textContent = dice;
+      </script>
+      <h3>失败</h3>
+      <h3>你没能说服德厄伊与你一起前往洞穴，“以后说不定还会再见面。”她笑了笑，转过来注视着你“有时候真相是伤人的，所以才要冷静慎重地思考。”她微笑地说，与你道别后离开了，离开前又叮嘱你注意安全。</h3>
+
+      <br>
+      <a href="aloneToCave.html"><h4>-独自前往洞穴方向</h4></a>
+</div>
+  </body>
+</html>

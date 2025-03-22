@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>真理之书——捷径</title>
+      <link rel="stylesheet" href="swordMeet.css">
+  </head>
+  <body style='background:#010001';>
+  <div class="box">
+      <p><span id="dice"></span></p>
+      <script >
+          const urlParams = new URLSearchParams(window.location.search);
+          const dice = urlParams.get('number');
+
+          document.getElementById('dice').textContent = dice;
+      </script>
+      <h3>成功</h3>
+      <h3>你发现在一处茂密的树丛后似乎有东西在，小心走过去，一个被遮蔽住的隐藏洞窟在高大的红杉树后，幽深狭窄的，不知通往何方</h3>
+
+      <br>
+      <a href="throughshortcut.html"><h4>-进入洞窟</h4></a>
+      <a href="aloneToCave.html"><h4>-转身离开向洞穴方向前进</h4></a>
+      <a href='swordMeet.html'><h4>-向右边前进</h4>
+</div>
+  </body>
+</html>

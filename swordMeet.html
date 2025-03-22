@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>真理之书——右边的路</title>
+      <link rel="stylesheet" href="start.css">
+  </head>
+  <body style='background:#010001';>
+  <div class="box">
+  <h3>树叶在柔和的风中发出窸窸窣窣的声音，你拨开层层树枝，在不远处出现了一块巨石，光滑的表面诉说着——它已经在片天空下很久了，雨滴曾滴落在它身上，狂风曾席卷过它身旁。在这块巨石中间有一道巨大的不规整的裂痕，如同被雷电击中的痕迹，你抬起头，看到在巨石的顶部有一把剑直插其中。</h3>
+ <h3>你利落地爬到巨石上，端详这柄剑，它表面覆盖了一层泥土，用手轻轻擦拭，露出它原本的色泽，在晨光中闪闪发亮，剑刃依旧锋利，微微的光晕让你揉了揉眼睛。很难想象当初它是如何被插入这样坚硬的巨石中，但长久的时间过去，它似乎变得有些松动，可以尝试把它拔出来。</h3>
+  <br>
+  <h4 id="dice">拔出剑（力量检定 中等10 平均 50%）</h4>
+  <script>
+
+      const h4Element = document.getElementById('dice');
+      h4Element.addEventListener('click', function() {
+
+        const dice = Math.floor(Math.random() * 20) + 1;
+          if (dice > 9) {
+              window.location.href = `swordsuccess.html?number=${dice}`;
+          } else {
+              window.location.href = `swordfail.html?number=${dice}`;
+          }
+      });
+      </script>
+  <a href="aloneToCave.html"><h4>-转身离开向洞穴方向前进</h4></a>
+
+</div>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>真理之书——分别</title>
+      <link rel="stylesheet" href="swordMeet.css">
+  </head>
+  <body style='background:#010001';>
+  <div class="box">
+      <p><span id="dice"></span></p>
+      <script >
+          const urlParams = new URLSearchParams(window.location.search);
+          const dice = urlParams.get('number');
+
+          document.getElementById('dice').textContent = dice;
+      </script>
+      <h3>成功</h3>
+
+
+      <br>
+      <a href="swordToCave.html"><h4>-带着剑前往洞穴方向</h4></a>
+</div>
+  </body>
+</html>

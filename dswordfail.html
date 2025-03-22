@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>真理之书——拔剑</title>
+      <link rel="stylesheet" href="swordMeetfail.css">
+  </head>
+  <body style='background:#010001';>
+  <div class="box">
+      <p><span id="dice"></span></p>
+      <script >
+          const urlParams = new URLSearchParams(window.location.search);
+          const dice = urlParams.get('number');
+
+          document.getElementById('dice').textContent = dice;
+      </script>
+      <h3>失败</h3>
+      <h3>这件事情比你想象的要艰难得多，你甩甩酸痛的手臂。</h3>
+      <br>
+      <a href="donTheWay.html"><h4>-前往洞穴方向</h4></a>
+</div>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>真理之书——左边的路</title>
+      <link rel="stylesheet" href="start.css">
+  </head>
+  <body style='background:#010001';>
+  <div class="box">
+  <h3>你来到了一片红杉树林，高大的树木屹立，似乎已经在这里生长了几百年以上，树干粗大得完全遮挡住你，表面都覆盖着地衣，不定根围绕在树干的底部，还有那些摇曳的蕨类植物。</h3>
+  <h3>但似乎在周围有什么不对劲的地方。</h3>
+  <br>
+  <h4 id="dice">仔细观察周围（侦查检定 困难14 较低 30%）</h4>
+  <script>
+
+      const h4Element = document.getElementById('dice');
+      h4Element.addEventListener('click', function() {
+
+        const dice = Math.floor(Math.random() * 20) + 1;
+          if (dice > 13) {
+              window.location.href = `shortcutsuccess.html?number=${dice}`;
+          } else {
+              window.location.href = `shortcutfail.html?number=${dice}`;
+          }
+      });
+      </script>
+  <a href="aloneToCave.html"><h4>-转身离开向洞穴方向前进</h4></a>
+  <a href='swordMeet.html'><h4>-向右边前进</h4></a>
+
+</div>
+  </body>
+</html>

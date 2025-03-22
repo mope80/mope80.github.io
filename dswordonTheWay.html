@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>真理之书——分别</title>
+      <link rel="stylesheet" href="start.css">
+  </head>
+  <body style='background:#010001';>
+  <div class="box">
+  <h3>你们快要到洞穴了，德厄伊突然叫住你，“其实，那个真理之书并不像它的名字，里面没有什么真理，只是一本写满高阶法术的咒语书。”她没有看着你而是望着远处的天空，依旧微笑着。“洞穴很危险要注意安全，快要到了，就在此处分别吧”，她停了下来，然后沉默了一小会</h3>
+  <br>
+  <a id="dice"><h4>——说服她一起去洞穴（话术检定 中等10 平均 50%</h4></a>
+  <script>
+
+      const h4Element = document.getElementById('dice');
+      h4Element.addEventListener('click', function() {
+
+        const dice = Math.floor(Math.random() * 20) + 1;
+          if (dice > 9) {
+              window.location.href = `dswordTalksuccess.html?number=${dice}`;
+          } else {
+              window.location.href = `dswordTalkfail.html?number=${dice}`;
+          }
+      });
+      </script>
+  <a href="dcontinueAdventure.html"><h4>——跟德厄伊一起走</h4></a>
+</div>
+  </body>
+</html>
